@@ -1,0 +1,81 @@
+ Cards:-----------------------------------------------------------------
+ 
+ { "card": {
+                                      "title": "INC123",
+                                      "subtitle": "Short Description",
+                                      "imageUri": "www.google.com",
+                                      "buttons": [
+                                        {
+                                         "text": "Visit",
+                                          "postback": "www.salesforce.com"
+                                        }
+                                      ]
+                                    }
+
+
+                                               } 
+---------------------------------------------------------------------
+
+
+jsonify({"fulfillmentText": "This is a text response",
+                    "fulfillmentMessages": [  {
+  "listSelect": 
+            {
+              "title": "MyList",
+              "items": 
+              [
+                
+                  
+                         {
+                              "info": {
+                                         
+                                              "key": "inc123",
+                                              
+                                            
+                                      },
+                              "title": "Item1",
+                              "description": "des item1",
+                              "image": {
+                                          "imageUri": "www.google.com",
+                                          "accessibilityText": "test1"
+                                        }
+                         },
+                   
+                         {
+                             "info": {
+                                        
+                                              "key": "inc14",
+                                              
+                                            
+                                      },
+                              "title": "item2",
+                              "description": "des item2",
+                              "image":{
+                                          "imageUri": "www.salesforce.com",
+                                          "accessibilityText": "test2"
+                                      }
+                         }     
+                
+              ]
+            }
+
+}
+                       ]
+                    ,
+                    "source": "example.com",
+                    "payload": {
+                      
+                    },
+                    "outputContexts": [
+                      
+                    ],
+                    "followupEventInput": {
+                      
+                    }
+                    
+                    
+                    })
+-----------------------------------------------------------------------------------------------
+https://developers.google.com/actions/reference/nodejsv2/overview
+
+https://developers.google.com/actions/dialogflow/webhook
